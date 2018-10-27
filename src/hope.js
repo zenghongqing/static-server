@@ -13,7 +13,7 @@ const stat = util.promisify(fs.stat);
 const readdir = util.promisify(fs.readdir);
 let tmpl = fs.readFileSync(path.join(__dirname,'template.ejs'),'utf8')
 class Server {
-    constructor () {
+    constructor (argv) {
         this.config = Object.assign({}, this.config, argv);
         // this.config = config;
         this.tmpl = tmpl;
