@@ -13,19 +13,19 @@ const argv = yargs.option('d', {
     demand: 'false',
     default: 'localhost',
     type: 'string',
-    description: '配置监听的主机'
+    describe: '配置监听的主机'
 }).option('p', {
     alias: 'port',
     demand: 'false',
     type: 'number',
     default: 8000,
-    description: '配置端口号'
+    describe: '配置端口号'
 }).option('c', {
     alias: 'child',
     demand: 'false',
     type: 'boolean',
     default: false,
-    description: '是否进行子进程运行'
+    describe: '是否进行子进程运行'
 })
 .usage('hope-server [option]')
 .example(
